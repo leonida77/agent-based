@@ -132,6 +132,5 @@ Potential future enhancements include:
 
 ## Authors
 
-Faculty of Computer Science and Engineering (FINKI)
-
-Agent-Based Systems Project
+Leonida Kostova 231018
+Simona Janceva 231009
