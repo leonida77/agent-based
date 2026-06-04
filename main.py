@@ -11,18 +11,18 @@ model = VacuumModel(
 )
 
 plt.figure(figsize=(12, 8))
-
-for step in range(2000):
+for step in range(5000):
     model.step()
 
     if step % 5 == 0:
         render_model(model, step)
 
     if model.finished:
+        plt.close()
+        print("\n===================================")
+        print("FINISHED CLEANING")
+        print("Robot returned to charging station")
+        print("===================================")
         break
 
-plt.close()
-
-print("\nSimulation finished")
-print(f"Remaining dirty cells: {len(model.dirty_cells)}")
 model.print_statistics()
